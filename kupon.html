@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Kuponlar — kağıt takip</title><style>:root{--bg:#0f1216;--k1:#171c23;--k2:#1e242d;--cz:#2a323d;--tx:#e6ebf2;--sn:#8b97a8;
+--ye:#3fb950;--kr:#f85149;--sa:#d29922;--mv:#58a6ff;--mor:#a371f7;
+--bg-success:#0d2612;--text-success:#3fb950;--border-success:#2c7a3f;
+--bg-danger:#2a1113;--text-danger:#f85149;--border-danger:#8b2c2c;
+--fill-success:#2ea043;--fill-danger:#c93c3c;
+--bg-accent:#0d1f33;--text-accent:#58a6ff;--border:#2a323d;
+--text-secondary:#8b97a8;--text-warning:#d29922;--surface-1:#1e242d;--text-muted:#7d8899}:root[data-tema=acik]{--bg:#f5f7fa;--k1:#ffffff;--k2:#eef1f5;--cz:#d3d9e1;--tx:#18202a;--sn:#5a6676;--ye:#1a7f37;--kr:#cf222e;--sa:#9a6700;--mv:#0969da;--mor:#8250df;--bg-success:#dafbe1;--text-success:#1a7f37;--border-success:#4ac26b;--bg-danger:#ffebe9;--text-danger:#cf222e;--border-danger:#ff8182;--fill-success:#2da44e;--fill-danger:#cf222e;--bg-accent:#ddf4ff;--text-accent:#0969da;--border:#d3d9e1;--text-secondary:#5a6676;--text-warning:#9a6700;--surface-1:#eef1f5;--text-muted:#6e7781}@media(prefers-color-scheme:light){:root:not([data-tema=koyu]){--bg:#f5f7fa;--k1:#ffffff;--k2:#eef1f5;--cz:#d3d9e1;--tx:#18202a;--sn:#5a6676;--ye:#1a7f37;--kr:#cf222e;--sa:#9a6700;--mv:#0969da;--mor:#8250df;--bg-success:#dafbe1;--text-success:#1a7f37;--border-success:#4ac26b;--bg-danger:#ffebe9;--text-danger:#cf222e;--border-danger:#ff8182;--fill-success:#2da44e;--fill-danger:#cf222e;--bg-accent:#ddf4ff;--text-accent:#0969da;--border:#d3d9e1;--text-secondary:#5a6676;--text-warning:#9a6700;--surface-1:#eef1f5;--text-muted:#6e7781}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.45 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:1300px;margin:0 auto;padding:12px 12px 80px}
+a{color:var(--mv)}
+.tust{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px}
+.tust h1{font-size:20px;margin:0;font-weight:500;margin-right:auto}
+.tust h1 small{color:var(--sn);font-size:13px;margin-left:6px}
+.tpan{display:inline-flex;align-items:center;min-height:34px;padding:0 10px;border:0.5px solid var(--cz);border-radius:8px;background:var(--k2);color:var(--mv);text-decoration:none;font-size:12.5px;white-space:nowrap}
+button{background:var(--k2);border:0.5px solid var(--cz);color:var(--tx);padding:6px 10px;border-radius:8px;font-size:12.5px;font-family:inherit;min-height:34px;cursor:pointer}
+.alt{color:var(--sn);font-size:12px;margin:2px 0 8px}
+.alt b{color:var(--tx);font-weight:600}
+.serit{background:#2d1e11;border-left:3px solid var(--sa);padding:7px 10px;border-radius:6px;margin-bottom:10px;font-size:12.5px;color:#f0d9b5;line-height:1.35}
+:root[data-tema=acik] .serit{background:#fff4d6;color:#5a4300}
+@media(prefers-color-scheme:light){:root:not([data-tema=koyu]) .serit{background:#fff4d6;color:#5a4300}}
+h2{font-size:15px;font-weight:600;margin:14px 0 8px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+h2 small{color:var(--sn);font-weight:400;font-size:12px}
+h2 .roz{margin-left:auto}
+.roz{display:inline-block;padding:1px 8px;border-radius:10px;font-size:11.5px;font-weight:600;background:var(--k2);border:0.5px solid var(--cz);color:var(--sn);white-space:nowrap}
+.roz.ok{background:var(--bg-success);border-color:var(--border-success);color:var(--text-success)}
+.roz.az{background:var(--k2);border-color:var(--sa);color:var(--sa)}
+.gun2{display:grid;grid-template-columns:1fr;gap:10px}
+@media(min-width:900px){.gun2{grid-template-columns:1fr 1fr}}
+.gk{background:var(--k1);border:0.5px solid var(--cz);border-radius:12px;padding:10px 12px;min-width:0}
+.gk>h3{margin:0 0 8px;font-size:14px;font-weight:600;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.gk>h3 small{color:var(--sn);font-weight:400;font-size:12px}
+.gk>h3 .roz{margin-left:auto}
+.kupon{background:var(--k2);border:0.5px solid var(--cz);border-radius:10px;padding:8px 10px;margin-bottom:8px;min-width:0}
+.kupon:last-child{margin-bottom:0}
+.kb{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;font-size:12px;color:var(--sn);margin-bottom:6px}
+.kb b{color:var(--tx);font-size:13px;font-weight:600}
+.kb .top{margin-left:auto;font-variant-numeric:tabular-nums;color:var(--tx);font-weight:600;font-size:14px}
+.kb .top small{color:var(--sn);font-weight:400;font-size:11px;margin-left:4px}
+.bac{display:grid;grid-template-columns:44px minmax(0,1fr) auto auto;gap:3px 8px;align-items:center;padding:5px 0;border-top:0.5px dashed var(--cz);font-variant-numeric:tabular-nums}
+.bac .sa{color:var(--sn);font-size:12px}
+.bac .mc{min-width:0}
+.bac .mc b{display:block;font-weight:500;overflow-wrap:anywhere;font-size:13.5px}
+.bac .mc small{display:block;color:var(--sn);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bac .mk{font-size:11.5px;font-weight:700;color:var(--mv);border:0.5px solid var(--cz);border-radius:4px;padding:1px 5px;white-space:nowrap;background:var(--k1)}
+.bac .or{text-align:right;line-height:1.2}
+.bac .or b{display:block;font-size:14px;font-weight:600}
+.bac .or small{color:var(--sn);font-size:11px;white-space:nowrap}
+.sk{color:var(--sa);font-size:11px;display:block}
+.kd{display:flex;gap:6px 12px;flex-wrap:wrap;font-size:11px;color:var(--sn);margin-top:5px;padding-top:5px;border-top:0.5px dashed var(--cz)}
+.kd i{font-style:normal}
+.bos{color:var(--sn);font-size:13px;padding:10px 0}
+.tur{display:grid;gap:10px}
+@media(min-width:900px){.tur{grid-template-columns:1fr 1fr}}
+details.kat>summary{cursor:pointer;color:var(--mv);font-size:12.5px;min-height:34px;display:flex;align-items:center;list-style:none}
+details.kat>summary::before{content:'▸ ';color:var(--sn)}
+details.kat[open]>summary::before{content:'▾ '}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:12.5px}
+th{color:var(--sn);font-weight:500;font-size:11px;text-align:right;padding:5px 4px;border-bottom:0.5px solid var(--cz);white-space:nowrap}
+td{padding:6px 4px;border-bottom:0.5px solid var(--cz);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+.kar{background:var(--k1);border:0.5px solid var(--cz);border-radius:12px;padding:10px 12px;overflow-x:auto}
+.kar .grp{color:var(--sn);font-size:11px;text-transform:uppercase;letter-spacing:.4px;text-align:center}
+.say{display:grid;gap:4px;margin:8px 0 2px}
+.say .cu{height:8px;border-radius:4px;background:var(--cz);overflow:hidden}
+.say .cu>i{display:block;height:100%;width:var(--x);background:var(--mv)}
+.say small{color:var(--sn);font-size:11.5px}
+.gec{background:var(--k1);border:0.5px solid var(--cz);border-radius:12px;padding:4px 12px}
+.gec details{border-bottom:0.5px solid var(--cz)}
+.gec details:last-child{border-bottom:0}
+.gec summary{cursor:pointer;min-height:40px;display:flex;align-items:center;gap:10px;list-style:none;font-size:13px}
+.gec summary::-webkit-details-marker{display:none}
+.gec summary .t{font-weight:600;min-width:84px}
+.gec summary .u{color:var(--sn);font-size:12px;margin-left:auto;white-space:nowrap}
+.gec .satir{display:grid;grid-template-columns:20px 1fr auto auto;gap:4px 8px;align-items:center;padding:4px 0 6px 2px;font-size:12.5px;font-variant-numeric:tabular-nums}
+.gec .satir small{color:var(--sn)}
+.tik{font-weight:700}.tik.T{color:var(--ye)}.tik.F{color:var(--kr)}.tik.E,.tik.G,.tik.I{color:var(--sa)}.tik.B{color:var(--sn)}
+.lej{color:var(--sn);font-size:11.5px;margin:6px 0 0}
+.dip{color:var(--sn);font-size:11.5px;margin-top:18px;padding-top:10px;border-top:0.5px solid var(--cz);line-height:1.5}
+@media(max-width:420px){.bac{grid-template-columns:40px minmax(0,1fr) auto auto;gap:3px 6px}.bac .mc b{font-size:13px}.kb .top{font-size:13px}
+.tust{gap:6px}.tust h1{font-size:19px}.tust h1 small{display:none}.tpan{padding:0 8px;font-size:12px;min-height:32px}#tema{min-height:32px;padding:0 8px}}
+</style></head><body><div class="wrap"><div class="tust"><h1>🎫 Kuponlar<small>v1 · kağıt takip</small></h1><a class="tpan" href="index.html" title="Tahmin Paneli">&larr; Panel</a><a class="tpan" href="tahta.html" title="Tahminci Tahtası">Tahta &rarr;</a><button id="tema" type="button" title="açık / koyu tema">◐</button></div><div class="alt">son kayıt turu <b>—</b> · güncelleme <b>29.10.2026 20:27</b> · açık Kol A bacak <b>0</b> · kural <b>K1</b> · v3.5 / FAZ 7 · tavsiye değildir</div><div class="serit"><b>Kağıt takip</b> — gerçek para önerisi değildir · oran <b>kayıt anındaki</b> iddaa oranıdır, sonradan değişmez</div><div class="gun2"><section class="gk"><h3>BUGÜN <small>Per 29.10 · oyun günü 06:00–05:59</small><span class="roz az">2'li 0 · 3'lü 0 / tavan 3</span></h3><div class="bos">bugün kural eşiğini geçen eşleşme yok</div></section><section class="gk"><h3>YARIN <small>Cum 30.10 · oyun günü 06:00–05:59</small><span class="roz az">2'li 0 · 3'lü 0 / tavan 3</span></h3><div class="bos">bu gün için kural eşiğini geçen eşleşme yok (henüz)</div></section></div><h2>Tur kuponları <small>pencere · kurulan / tavan · tavan dolmadıysa sonraki tur ekler</small></h2><div class="tur"><section class="gk"><h3>HAFTA SONU <small>Cum 30.10 – Pzt 02.11</small><span style="margin-left:auto"><span class="roz az" style="margin-left:4px">2'li 0 / 6</span><span class="roz az" style="margin-left:4px">3'lü 0 / 6</span></span></h3><div class="bos">bu pencerede kural eşiğini geçen eşleşme yok</div></section><section class="gk"><h3>HAFTA İÇİ <small>Sal 27.10 – Per 29.10</small><span style="margin-left:auto"><span class="roz az" style="margin-left:4px">2'li 0 / 2</span><span class="roz az" style="margin-left:4px">3'lü 0 / 2</span></span></h3><div class="bos">bu pencerede kural eşiğini geçen eşleşme yok</div></section></div><h2>Kol B · tekli takip <small>kupona girmez · B1 2.5 ÜST (gol ortamı ≥ 3.2) · B2 KG VAR (sezon iç/dış saha ortalamaları, panel kartıyla aynı) · n&lt;4 ise uygulanmaz</small><span class="roz">açık B1 0 · B2 0</span></h2><details class="kat gk"><summary>açık bacakları göster</summary><h3 style="font-size:13px;margin:8px 0 2px;color:var(--sn)">B1 · 2.5 ÜST · 0</h3><h3 style="font-size:13px;margin:8px 0 2px;color:var(--sn)">B2 · KG VAR · 0</h3></details><h2>Kağıt karne <small>birim 1 · ertelenen / kayıtta başlamış bacak 1.00 · sonuçsuz paydaya girmez</small></h2><div class="kar"><div class="say"><small>ön-kayıt sayacı · Kol A tekli (K1) · sonuçlanmış bacak <b>0 / 150</b> · hüküm n = 150'de BİR kez (PLANLAMA ön-kaydı)</small><div class="cu"><i style="--x:0%"></i></div></div><table><thead><tr><th>ürün</th><th colspan="6" class="grp">son 30 gün</th><th colspan="6" class="grp">toplam</th></tr><tr><th></th><th>n</th><th>tutan</th><th>isabet</th><th>ort. oran</th><th>başa baş</th><th>ROI</th><th>n</th><th>tutan</th><th>isabet</th><th>ort. oran</th><th>başa baş</th><th>ROI</th></tr></thead><tbody><tr><td>Kol A · tekli</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Günlük 2'li</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Günlük 3'lü</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Tur hafta içi 2'li</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Tur hafta içi 3'lü</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Tur hafta sonu 2'li</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Tur hafta sonu 3'lü</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Kol B1 · 2.5 ÜST</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Kol B2 · KG VAR</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table><div class="lej">başa baş = 1 / ort. oran (gereken isabet) · ROI = Σ(oran × tuttu − 1) / n · henüz sonuçlanmış kayıt yok · %95 aralığı n ≥ 30'da basılır</div></div><h2>Geçmiş <small>son 30 gün · ✓ tuttu · ✗ tutmadı · ⏸ ertelendi / 1.00 · ⏳ bekliyor</small></h2><div class="gec"><div class="bos">kayıt yok — sistem ilk turda kayda başlar</div></div><div class="dip">kaynak: v3_5_Test_Takip.xlsx (Kalibrasyon.p_book = marjı çıkarılmış iddaa olasılığı · Kalibrasyon.Oran = ham iddaa oranı · sonuç Kalibrasyon.Tuttu ve Maclar.Not ERTELENDI) · kayıt: secimler/&lt;YYYY-AA&gt;.json (ekle-yalnız, sha zinciri) · kurallar: PLANLAMA «ÖN-KAYIT — GÜNÜN SEÇİMLERİ» · kaba birlikte olasılık bacakları bağımsız sayar (gerçek korelasyon yok sayılır) · Brier / tahmin isabetine GİRMEZ</div></div><script>(function(){var k='tahta_tema',r=document.documentElement,b=document.getElementById('tema');
+try{var v=localStorage.getItem(k);if(v)r.setAttribute('data-tema',v);}catch(e){}
+b.onclick=function(){var cur=r.getAttribute('data-tema');var koyu=cur?cur==='koyu':!window.matchMedia('(prefers-color-scheme:light)').matches;
+var n=koyu?'acik':'koyu';r.setAttribute('data-tema',n);try{localStorage.setItem(k,n);}catch(e){}};})();</script></body></html>
